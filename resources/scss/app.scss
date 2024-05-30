@@ -1,1 +1,4 @@
-@import '~bootstrap/scss/bootstrap'
+@use './admin/index';
+@use './admin/show';
+@import '~bootstrap/scss/bootstrap';
+

@@ -53,11 +53,13 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        $projects = Project::findOrFail($id);
+        $project = Project::findOrFail($id);
 
         $data = [
-            'projects' => $projects
+            'project' => $project
         ];
+
+        return view('admin.projects.show', $data);
     }
 
     /**
