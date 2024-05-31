@@ -30,6 +30,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-nav">
+                <div class="nav-item">
+                    <span id="current-time" class="me-2 text-white">ciao</span>
+                </div>
+            </div>
+            <div class="navbar-nav">
                 <div class="nav-item text-nowrap ms-2">
                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
@@ -48,14 +53,14 @@
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">Dashboard</a>
+                                <a class="nav-link text-white fst-italic {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">Dashboard</a>
                             </li>
                         </ul>
                     </div>
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.index')}}">Index</a>
+                                <a class="nav-link text-white fst-italic {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.index')}}">I tuoi progetti</a>
                             </li>
                         </ul>
                     </div>
@@ -69,7 +74,7 @@
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.create')}}">Aggiungi</a>
+                                <a class="nav-link text-white fst-italic {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.create')}}">Aggiungi</a>
                             </li>
                         </ul>
                     </div>

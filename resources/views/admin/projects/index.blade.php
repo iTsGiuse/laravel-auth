@@ -5,21 +5,21 @@
         <div class="container-fluid">
             <div class="row mb-5">
                 <div class="col">
-                    <h1 class="text-center">I tuoi progetti ({{count($projects)}})</h1>
+                    <h1 class="text-center">Progetti ({{count($projects)}})</h1>
                 </div>
             </div>
             <div class="row text-danger">
-                <div class="col-1 text-center">
-                    <h5>Dettagli:</h5>
+                <div class="col-1 text-center fst-italic">
+                    <h3>Dettagli:</h3>
                 </div>
-                <div class="col-4">
-                    <h5>Nome progetto:</h5>
+                <div class="col-4 fst-italic">
+                    <h3>Nome progetto:</h3>
                 </div>
-                <div class="col-4">
-                    <h5>Nome cliente:</h5>
+                <div class="col-4 fst-italic">
+                    <h3>Nome cliente:</h3>
                 </div>
-                <div class="col-2 text-center">
-                    <h5>Azioni:</h5>
+                <div class="col-2 text-center fst-italic">
+                    <h3>Azioni:</h3>
                 </div>
             </div>
             @foreach ($projects as $project)

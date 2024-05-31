@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row my-3">
                 <div class="col">
-                    <h1 class="text-center text-danger">{{$project->name}}</h1>
+                    <h1 class="text-center text-danger">Dettagli del progetto: {{$project->name}}</h1>
                 </div>
             </div>
             <div class="row my-5">
