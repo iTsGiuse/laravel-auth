@@ -22,3 +22,24 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 updateTime();
+
+const allDeleteButtons = document.querySelectorAll('.js-delete-btn');
+allDeleteButtons.forEach((deleteButton) => {
+    deleteButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        const deleteModal = document.getElementById('confirmDeleteModal');
+        
+        const projectName = this.dataset.projectName;
+        deleteModal.querySelector('.modal-body').innerHTML = `Sei sicuro di voler eliminare ${projectName}?`;
+
+        const bsDeleteModal = new bootstrap.Modal(deleteModal);
+        bsDeleteModal.show();
+
+        const modalConfirmDeletionBtn = document.getElementById('modal-confirm-deletion');
+        modalConfirmDeletionBtn.addEventListener('click', function() {
+
+            deleteButton.parentElement.submit();
+        });
+    });
+});

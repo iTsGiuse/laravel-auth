@@ -64,17 +64,10 @@
                             </li>
                         </ul>
                     </div>
-                    {{-- <div class="position-sticky pt-3">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.show' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.show', )}}">Show</a>
-                            </li>
-                        </ul>
-                    </div> --}}
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-white fst-italic {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.create')}}">Aggiungi</a>
+                                <a class="nav-link text-white fst-italic {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.create')}}">Crea un nuovo progetto</a>
                             </li>
                         </ul>
                     </div>
